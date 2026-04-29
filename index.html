@@ -7,31 +7,42 @@
 <link rel="stylesheet" href="colors_and_type.css">
 <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
 <style>
-  body { margin: 0; background: var(--fx-bg); color: var(--fx-fg); font-family: var(--fx-font-body); }
-  .wrap { max-width: 960px; margin: 0 auto; padding: 48px 24px 80px; }
+  * { box-sizing: border-box; }
+  html, body { overflow-x: hidden; }
+  body { margin: 0; background: var(--fx-bg); color: var(--fx-fg); font-family: var(--fx-font-body); -webkit-text-size-adjust: 100%; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 32px 20px 64px; }
   header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
-  header img { height: 44px; }
-  h1 { font-family: var(--fx-font-display); font-weight: 600; font-size: 44px; line-height: 1.1; margin: 24px 0 8px; letter-spacing: -0.01em; }
-  .tag { font-style: italic; color: var(--fx-ink-700); margin: 0 0 32px; font-size: 18px; }
-  h2 { font-family: var(--fx-font-display); font-weight: 600; font-size: 22px; margin: 40px 0 14px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+  header img { height: 40px; max-width: 100%; }
+  h1 { font-family: var(--fx-font-display); font-weight: 600; font-size: clamp(32px, 8vw, 44px); line-height: 1.1; margin: 20px 0 8px; letter-spacing: -0.01em; }
+  .tag { font-style: italic; color: var(--fx-ink-700); margin: 0 0 28px; font-size: clamp(15px, 4vw, 18px); }
+  h2 { font-family: var(--fx-font-display); font-weight: 600; font-size: 20px; margin: 36px 0 12px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
   a.card {
     display: block; padding: 14px 16px; border-radius: 10px; text-decoration: none;
     background: var(--fx-bg-alt); color: var(--fx-fg); border: 1px solid rgba(0,0,0,0.06);
     transition: transform 0.08s ease, border-color 0.08s ease;
   }
-  a.card:hover { border-color: var(--fx-accent); transform: translateY(-1px); }
+  a.card:active { border-color: var(--fx-accent); }
+  @media (hover: hover) {
+    a.card:hover { border-color: var(--fx-accent); transform: translateY(-1px); }
+  }
   a.card .name { font-weight: 600; font-size: 14px; }
   a.card .sub { font-size: 12px; color: var(--fx-ink-700); margin-top: 2px; }
-  .featured { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 8px; }
+  .featured { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 8px; }
   a.feat {
-    display: block; padding: 20px; border-radius: 14px; text-decoration: none;
+    display: block; padding: 18px; border-radius: 14px; text-decoration: none;
     background: var(--fx-surface-dark); color: #fff;
   }
   a.feat.alt { background: var(--fx-accent); }
-  a.feat .name { font-family: var(--fx-font-display); font-size: 22px; font-weight: 600; }
+  a.feat .name { font-family: var(--fx-font-display); font-size: 20px; font-weight: 600; }
   a.feat .sub { font-size: 13px; opacity: 0.85; margin-top: 4px; }
   footer { margin-top: 48px; font-size: 12px; color: var(--fx-ink-700); }
+  @media (max-width: 480px) {
+    .wrap { padding: 24px 16px 56px; }
+    .grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+    a.card { padding: 12px 14px; }
+    h2 { margin: 28px 0 10px; }
+  }
 </style>
 </head>
 <body>
