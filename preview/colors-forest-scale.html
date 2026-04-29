@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FitX — Color: Forest Scale</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--fx-bg); font-family: var(--fx-font-body); padding: 24px; }
+  .scale { display: grid; grid-template-columns: repeat(7, 1fr); gap: 0; border-radius: 12px; overflow: hidden; box-shadow: var(--fx-shadow-sm); }
+  .step { aspect-ratio: 1 / 1.1; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; }
+  .lbl { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; }
+  .val { font-size: 10px; font-family: var(--fx-font-num); }
+  .caption { margin-top: 12px; font-size: 12px; color: var(--fx-fg-3); }
+</style>
+</head>
+<body>
+<div class="scale">
+  <div class="step" style="background:#E8F0EC;color:#11332A"><span class="lbl">50</span><span class="val">#E8F0EC</span></div>
+  <div class="step" style="background:#C4D9CC;color:#11332A"><span class="lbl">100</span><span class="val">#C4D9CC</span></div>
+  <div class="step" style="background:#8AB5A0;color:#11332A"><span class="lbl">200</span><span class="val">#8AB5A0</span></div>
+  <div class="step" style="background:#4F8870;color:#FFF"><span class="lbl">300</span><span class="val">#4F8870</span></div>
+  <div class="step" style="background:#2E6852;color:#FFF"><span class="lbl">400</span><span class="val">#2E6852</span></div>
+  <div class="step" style="background:#1F4D3F;color:#FFF"><span class="lbl">500 ★</span><span class="val">#1F4D3F</span></div>
+  <div class="step" style="background:#11332A;color:#FFF"><span class="lbl">600</span><span class="val">#11332A</span></div>
+</div>
+<div class="caption">Forest — vitality / brand-dark ramp · 500 is the canonical brand value</div>
+</body>
+</html>

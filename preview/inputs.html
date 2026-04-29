@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FitX — Inputs</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--fx-bg); font-family: var(--fx-font-body); padding: 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .field input.focus { border-color: var(--fx-saffron-400); box-shadow: 0 0 0 3px rgba(224,101,58,0.15); }
+  .field input.error { border-color: var(--fx-danger); }
+  .err { color: var(--fx-danger); font-size: 12px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="grid">
+  <div class="field"><label class="fx-label">Full name</label><input class="fx-input" placeholder="e.g. Anjali Sharma"></div>
+  <div class="field"><label class="fx-label">Age <span style="color:var(--fx-stone-500);font-weight:400">(used to calibrate plan)</span></label><input class="fx-input focus" value="42"></div>
+  <div class="field"><label class="fx-label">Mobile</label><input class="fx-input" placeholder="+91" value="+91 98765 43210"></div>
+  <div class="field"><label class="fx-label">Email</label><input class="fx-input error" value="anjali@"><div class="err">Enter a valid email — we'll send your weekly check-in here.</div></div>
+</div>
+</body>
+</html>

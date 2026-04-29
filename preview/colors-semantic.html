@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FitX — Color: Semantic</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--fx-bg); font-family: var(--fx-font-body); padding: 24px; }
+  .row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .pair { display: flex; align-items: stretch; border-radius: 12px; overflow: hidden; background: var(--fx-white); border: 1px solid var(--fx-stone-200); }
+  .pair .a, .pair .b { padding: 14px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+  .a { color: var(--fx-white); }
+  .name { font-family: var(--fx-font-display); font-weight: 600; font-size: 14px; }
+  .hex { font-size: 11px; opacity: 0.85; font-variant-numeric: tabular-nums; }
+  .lbl { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.7; margin-bottom: 4px; }
+  .pill { display: inline-block; align-self: flex-start; padding: 3px 9px; border-radius: 99px; font-size: 11px; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="pair"><div class="a" style="background:#3F8A5C"><div><div class="lbl">Success</div><div class="name">#3F8A5C</div></div><div class="hex">on dark surfaces</div></div><div class="b" style="background:#E6F1EA"><div><div class="lbl">Bg pair</div><div class="name" style="color:#3F8A5C">#E6F1EA</div></div><span class="pill" style="background:#3F8A5C;color:#FFF">On track</span></div></div>
+  <div class="pair"><div class="a" style="background:#C97B1A"><div><div class="lbl">Warn</div><div class="name">#C97B1A</div></div><div class="hex">missed targets</div></div><div class="b" style="background:#FBEFD9"><div><div class="lbl">Bg pair</div><div class="name" style="color:#C97B1A">#FBEFD9</div></div><span class="pill" style="background:#C97B1A;color:#FFF">3 swaps needed</span></div></div>
+  <div class="pair"><div class="a" style="background:#B43A2E"><div><div class="lbl">Danger</div><div class="name">#B43A2E</div></div><div class="hex">errors / med flags</div></div><div class="b" style="background:#FBE6E2"><div><div class="lbl">Bg pair</div><div class="name" style="color:#B43A2E">#FBE6E2</div></div><span class="pill" style="background:#B43A2E;color:#FFF">Doctor review</span></div></div>
+  <div class="pair"><div class="a" style="background:#3A6FA8"><div><div class="lbl">Info</div><div class="name">#3A6FA8</div></div><div class="hex">tips / coach notes</div></div><div class="b" style="background:#E5EEF7"><div><div class="lbl">Bg pair</div><div class="name" style="color:#3A6FA8">#E5EEF7</div></div><span class="pill" style="background:#3A6FA8;color:#FFF">Coach reviewed</span></div></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FitX — Cards</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--fx-bg); font-family: var(--fx-font-body); padding: 24px; color: var(--fx-fg-1); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .card-title { font-family: var(--fx-font-display); font-weight: 600; font-size: 18px; margin: 0 0 4px; }
+  .meta { font-size: 12px; color: var(--fx-fg-3); }
+  .row { display: flex; align-items: center; gap: 10px; }
+  .thumb { width: 48px; height: 48px; border-radius: 10px; background: linear-gradient(135deg, #E0653A, #97391A); display: grid; place-items: center; color: #fff; font-family: var(--fx-font-display); font-weight: 600; }
+  .stat { font-family: var(--fx-font-num); font-size: 28px; color: var(--fx-saffron-400); font-weight: 500; letter-spacing: -0.02em; }
+  .stat-row { display: flex; gap: 18px; align-items: baseline; }
+  .lbl { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fx-stone-500); font-weight: 600; }
+  .dark { background: var(--fx-forest-500); color: var(--fx-cream-100); }
+  .dark .meta, .dark .lbl { color: var(--fx-cream-300); }
+</style>
+</head>
+<body>
+<div class="grid">
+  <div class="fx-card">
+    <div class="lbl" style="margin-bottom:6px">Today's workout</div>
+    <h4 class="card-title">Lower body strength</h4>
+    <div class="meta">35 min · home · no equipment</div>
+  </div>
+  <div class="fx-card dark">
+    <div class="lbl" style="margin-bottom:6px">Weekly streak</div>
+    <div class="stat-row"><span class="stat" style="color:#E89368">12</span><span class="meta">days · personal best</span></div>
+  </div>
+  <div class="fx-card-flat">
+    <div class="row"><div class="thumb">P</div><div><h4 class="card-title">Paneer bhurji</h4><div class="meta">22g protein · 15 min · veg</div></div></div>
+  </div>
+  <div class="fx-card">
+    <span class="fx-badge fx-badge-success" style="margin-bottom:8px"><span style="width:6px;height:6px;border-radius:99px;background:currentColor;display:inline-block"></span>Reviewed by Dr. Anjali</span>
+    <h4 class="card-title">Your plan is ready</h4>
+    <div class="meta">Calibrated for age 42 · vegetarian · thyroid</div>
+  </div>
+</div>
+</body>
+</html>

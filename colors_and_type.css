@@ -1,0 +1,392 @@
+/* =========================================================
+   FitX Design Tokens — colors_and_type.css
+   Import this file in any FitX artifact:
+     <link rel="stylesheet" href="../colors_and_type.css">
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Hind:wght@400;500;600&display=swap');
+
+:root {
+  /* ---------- Color: Brand ---------- */
+  --fx-saffron-50:  #FBEEE5;
+  --fx-saffron-100: #F6D8C2;
+  --fx-saffron-200: #EFB997;
+  --fx-saffron-300: #E89368;
+  --fx-saffron-400: #E0653A;   /* PRIMARY ACCENT */
+  --fx-saffron-500: #C04E26;
+  --fx-saffron-600: #97391A;
+
+  --fx-forest-50:  #E8F0EC;
+  --fx-forest-100: #C4D9CC;
+  --fx-forest-200: #8AB5A0;
+  --fx-forest-300: #4F8870;
+  --fx-forest-400: #2E6852;
+  --fx-forest-500: #1F4D3F;    /* PRIMARY DARK SURFACE */
+  --fx-forest-600: #11332A;
+
+  /* ---------- Color: Neutrals (warm, brown-tinted) ---------- */
+  --fx-cream-50:  #FDFAF4;
+  --fx-cream-100: #FCF8EF;
+  --fx-cream-200: #F7F1E7;     /* PAGE BG */
+  --fx-cream-300: #EFE5D2;
+  --fx-cream-400: #E2D5BC;
+
+  --fx-ink-900: #1A1815;        /* body text */
+  --fx-ink-800: #2C2823;
+  --fx-ink-700: #463F37;
+  --fx-stone-600: #6B6359;
+  --fx-stone-500: #8A8074;      /* secondary text */
+  --fx-stone-400: #A89E92;
+  --fx-stone-300: #C9C0B5;
+  --fx-stone-200: #E1DAD0;      /* hairline border */
+  --fx-stone-100: #ECE6DD;
+
+  --fx-white: #FFFFFF;
+
+  /* ---------- Color: Semantic ---------- */
+  --fx-success: #3F8A5C;
+  --fx-success-bg: #E6F1EA;
+  --fx-warn:    #C97B1A;
+  --fx-warn-bg: #FBEFD9;
+  --fx-danger:  #B43A2E;
+  --fx-danger-bg: #FBE6E2;
+  --fx-info:    #3A6FA8;
+  --fx-info-bg: #E5EEF7;
+
+  /* ---------- Color: Functional aliases ---------- */
+  --fx-bg:           var(--fx-cream-200);
+  --fx-bg-alt:       var(--fx-cream-100);
+  --fx-surface:      var(--fx-white);
+  --fx-surface-alt:  var(--fx-cream-100);
+  --fx-surface-dark: var(--fx-forest-500);
+
+  --fx-fg:    var(--fx-ink-900);
+  --fx-fg-1:  var(--fx-ink-900);    /* primary text */
+  --fx-fg-2:  var(--fx-stone-600);  /* secondary text */
+  --fx-fg-3:  var(--fx-stone-500);  /* tertiary / metadata */
+  --fx-fg-on-dark: var(--fx-cream-100);
+
+  --fx-accent: var(--fx-saffron-400);
+  --fx-accent-hover: var(--fx-saffron-500);
+  --fx-accent-press: var(--fx-saffron-600);
+
+  --fx-border:        var(--fx-stone-200);
+  --fx-border-strong: var(--fx-stone-300);
+
+  /* ---------- Type: Families ---------- */
+  --fx-font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --fx-font-body:    'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fx-font-hindi:   'Hind', 'Inter', sans-serif;
+  --fx-font-num:     'Fraunces', 'Iowan Old Style', Georgia, serif;
+
+  /* ---------- Type: Sizes ---------- */
+  --fx-text-xs:    12px;
+  --fx-text-sm:    14px;
+  --fx-text-base:  16px;
+  --fx-text-md:    18px;
+  --fx-text-lg:    20px;
+  --fx-text-xl:    24px;
+  --fx-text-2xl:   30px;
+  --fx-text-3xl:   38px;
+  --fx-text-4xl:   48px;
+  --fx-text-5xl:   64px;
+  --fx-text-6xl:   80px;
+
+  /* ---------- Type: Weights ---------- */
+  --fx-w-regular:  400;
+  --fx-w-medium:   500;
+  --fx-w-semibold: 600;
+  --fx-w-bold:     700;
+
+  /* ---------- Type: Line heights ---------- */
+  --fx-lh-tight:   1.1;
+  --fx-lh-snug:    1.25;
+  --fx-lh-normal:  1.5;
+  --fx-lh-relaxed: 1.65;
+
+  /* ---------- Type: Tracking ---------- */
+  --fx-track-tight:  -0.02em;
+  --fx-track-normal: 0;
+  --fx-track-wide:   0.02em;
+  --fx-track-eyebrow: 0.12em;
+
+  /* ---------- Spacing ---------- */
+  --fx-space-1:  4px;
+  --fx-space-2:  8px;
+  --fx-space-3:  12px;
+  --fx-space-4:  16px;
+  --fx-space-5:  20px;
+  --fx-space-6:  24px;
+  --fx-space-8:  32px;
+  --fx-space-10: 40px;
+  --fx-space-12: 48px;
+  --fx-space-16: 64px;
+  --fx-space-20: 80px;
+  --fx-space-24: 96px;
+  --fx-space-32: 128px;
+
+  /* ---------- Radii ---------- */
+  --fx-radius-xs:   4px;
+  --fx-radius-sm:   8px;
+  --fx-radius-md:   12px;
+  --fx-radius-lg:   20px;
+  --fx-radius-xl:   28px;
+  --fx-radius-pill: 9999px;
+
+  /* ---------- Shadow (warm, brown-tinted) ---------- */
+  --fx-shadow-xs: 0 1px 2px rgba(31, 24, 15, 0.04);
+  --fx-shadow-sm: 0 2px 6px rgba(31, 24, 15, 0.06);
+  --fx-shadow-md: 0 6px 16px rgba(31, 24, 15, 0.08);
+  --fx-shadow-lg: 0 16px 36px rgba(31, 24, 15, 0.10);
+  --fx-shadow-xl: 0 28px 60px rgba(31, 24, 15, 0.14);
+
+  /* ---------- Motion ---------- */
+  --fx-ease:        cubic-bezier(0.22, 1, 0.36, 1);
+  --fx-ease-in:     cubic-bezier(0.4, 0, 1, 1);
+  --fx-ease-out:    cubic-bezier(0, 0, 0.2, 1);
+  --fx-dur-fast:    150ms;
+  --fx-dur:         250ms;
+  --fx-dur-slow:    400ms;
+
+  /* ---------- Layout ---------- */
+  --fx-content-max: 1200px;
+  --fx-hero-max:    1440px;
+  --fx-page-pad-mobile:  20px;
+  --fx-page-pad-desktop: 48px;
+}
+
+/* =========================================================
+   Semantic / element-level styles
+   These are READY-TO-APPLY classes. Use them directly or
+   reference the tokens above for custom components.
+   ========================================================= */
+
+.fx-h1, .fx-h2, .fx-h3, .fx-h4 {
+  font-family: var(--fx-font-display);
+  color: var(--fx-fg-1);
+  letter-spacing: var(--fx-track-tight);
+  font-optical-sizing: auto;
+  text-wrap: balance;
+}
+
+.fx-h1 {
+  font-size: clamp(40px, 6vw, var(--fx-text-6xl));
+  font-weight: var(--fx-w-medium);
+  line-height: var(--fx-lh-tight);
+}
+.fx-h2 {
+  font-size: clamp(32px, 4.5vw, var(--fx-text-4xl));
+  font-weight: var(--fx-w-medium);
+  line-height: var(--fx-lh-tight);
+}
+.fx-h3 {
+  font-size: var(--fx-text-2xl);
+  font-weight: var(--fx-w-semibold);
+  line-height: var(--fx-lh-snug);
+}
+.fx-h4 {
+  font-size: var(--fx-text-xl);
+  font-weight: var(--fx-w-semibold);
+  line-height: var(--fx-lh-snug);
+}
+
+.fx-eyebrow {
+  font-family: var(--fx-font-body);
+  font-size: var(--fx-text-xs);
+  font-weight: var(--fx-w-semibold);
+  letter-spacing: var(--fx-track-eyebrow);
+  text-transform: uppercase;
+  color: var(--fx-stone-500);
+}
+
+.fx-lead {
+  font-family: var(--fx-font-body);
+  font-size: var(--fx-text-lg);
+  line-height: var(--fx-lh-relaxed);
+  color: var(--fx-fg-2);
+  text-wrap: pretty;
+}
+
+.fx-body {
+  font-family: var(--fx-font-body);
+  font-size: var(--fx-text-base);
+  line-height: var(--fx-lh-relaxed);
+  color: var(--fx-fg-1);
+}
+
+.fx-small {
+  font-family: var(--fx-font-body);
+  font-size: var(--fx-text-sm);
+  line-height: var(--fx-lh-normal);
+  color: var(--fx-fg-2);
+}
+
+.fx-caption {
+  font-family: var(--fx-font-body);
+  font-size: var(--fx-text-xs);
+  line-height: var(--fx-lh-normal);
+  color: var(--fx-fg-3);
+}
+
+.fx-num {
+  font-family: var(--fx-font-num);
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-weight: var(--fx-w-medium);
+  letter-spacing: var(--fx-track-tight);
+}
+
+/* =========================================================
+   Button system (cosmetic — wire interactions in components)
+   ========================================================= */
+.fx-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--fx-space-2);
+  font-family: var(--fx-font-body);
+  font-weight: var(--fx-w-semibold);
+  font-size: var(--fx-text-base);
+  height: 48px;
+  padding: 0 var(--fx-space-6);
+  border-radius: var(--fx-radius-sm);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: background var(--fx-dur-fast) var(--fx-ease),
+              transform var(--fx-dur-fast) var(--fx-ease),
+              box-shadow var(--fx-dur-fast) var(--fx-ease),
+              border-color var(--fx-dur-fast) var(--fx-ease),
+              color var(--fx-dur-fast) var(--fx-ease);
+  white-space: nowrap;
+}
+.fx-btn:focus-visible {
+  outline: 2px solid var(--fx-saffron-400);
+  outline-offset: 3px;
+}
+.fx-btn-primary {
+  background: var(--fx-saffron-400);
+  color: var(--fx-white);
+}
+.fx-btn-primary:hover { background: var(--fx-saffron-500); }
+.fx-btn-primary:active { background: var(--fx-saffron-600); transform: translateY(1px); }
+
+.fx-btn-secondary {
+  background: var(--fx-forest-500);
+  color: var(--fx-cream-100);
+}
+.fx-btn-secondary:hover { background: var(--fx-forest-400); }
+.fx-btn-secondary:active { background: var(--fx-forest-600); transform: translateY(1px); }
+
+.fx-btn-outline {
+  background: transparent;
+  color: var(--fx-fg-1);
+  border-color: var(--fx-stone-300);
+}
+.fx-btn-outline:hover { background: var(--fx-cream-100); border-color: var(--fx-ink-900); }
+.fx-btn-outline:active { transform: translateY(1px); }
+
+.fx-btn-ghost {
+  background: transparent;
+  color: var(--fx-fg-1);
+  height: 40px;
+  padding: 0 var(--fx-space-4);
+}
+.fx-btn-ghost:hover { background: var(--fx-cream-100); }
+
+.fx-btn-sm { height: 36px; padding: 0 var(--fx-space-4); font-size: var(--fx-text-sm); }
+.fx-btn-lg { height: 56px; padding: 0 var(--fx-space-8); font-size: var(--fx-text-md); }
+.fx-btn-pill { border-radius: var(--fx-radius-pill); }
+
+/* =========================================================
+   Card
+   ========================================================= */
+.fx-card {
+  background: var(--fx-surface);
+  border-radius: var(--fx-radius-md);
+  box-shadow: var(--fx-shadow-sm);
+  padding: var(--fx-space-6);
+}
+.fx-card-lg {
+  border-radius: var(--fx-radius-lg);
+  padding: var(--fx-space-8);
+}
+.fx-card-flat {
+  background: var(--fx-surface);
+  border-radius: var(--fx-radius-md);
+  border: 1px solid var(--fx-border);
+  box-shadow: none;
+  padding: var(--fx-space-6);
+}
+
+/* =========================================================
+   Form inputs
+   ========================================================= */
+.fx-input {
+  font-family: var(--fx-font-body);
+  font-size: var(--fx-text-base);
+  height: 48px;
+  padding: 0 var(--fx-space-4);
+  border-radius: var(--fx-radius-sm);
+  border: 1.5px solid var(--fx-stone-300);
+  background: var(--fx-white);
+  color: var(--fx-fg-1);
+  transition: border-color var(--fx-dur-fast) var(--fx-ease),
+              box-shadow var(--fx-dur-fast) var(--fx-ease);
+  width: 100%;
+}
+.fx-input::placeholder { color: var(--fx-stone-400); }
+.fx-input:hover { border-color: var(--fx-stone-400); }
+.fx-input:focus {
+  outline: none;
+  border-color: var(--fx-saffron-400);
+  box-shadow: 0 0 0 3px rgba(224, 101, 58, 0.15);
+}
+
+.fx-label {
+  display: block;
+  font-family: var(--fx-font-body);
+  font-size: var(--fx-text-sm);
+  font-weight: var(--fx-w-medium);
+  color: var(--fx-fg-1);
+  margin-bottom: var(--fx-space-2);
+}
+
+/* =========================================================
+   Badge / chip
+   ========================================================= */
+.fx-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--fx-font-body);
+  font-size: var(--fx-text-xs);
+  font-weight: var(--fx-w-semibold);
+  padding: 4px 10px;
+  border-radius: var(--fx-radius-pill);
+  background: var(--fx-cream-300);
+  color: var(--fx-ink-800);
+}
+.fx-badge-saffron { background: var(--fx-saffron-100); color: var(--fx-saffron-600); }
+.fx-badge-forest  { background: var(--fx-forest-100);  color: var(--fx-forest-600); }
+.fx-badge-success { background: var(--fx-success-bg);  color: var(--fx-success); }
+.fx-badge-warn    { background: var(--fx-warn-bg);     color: var(--fx-warn); }
+.fx-badge-danger  { background: var(--fx-danger-bg);   color: var(--fx-danger); }
+
+/* =========================================================
+   Base resets to sit nicely on FitX page
+   ========================================================= */
+.fx-page {
+  background: var(--fx-bg);
+  color: var(--fx-fg-1);
+  font-family: var(--fx-font-body);
+  font-size: var(--fx-text-base);
+  line-height: var(--fx-lh-relaxed);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

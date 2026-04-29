@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 72" fill="none">
+  <text x="0" y="52" font-family="&#39;Fraunces&#39;, Georgia, serif" font-size="56" font-weight="500" fill="#1F4D3F" letter-spacing="-2">Fit</text>
+  <rect x="100" y="14" width="48" height="48" rx="10" fill="#E0653A"></rect>
+  <path d="M110 24 L138 52 M138 24 L110 52" stroke="#FDFAF4" stroke-width="6" stroke-linecap="round"></path>
+</svg>

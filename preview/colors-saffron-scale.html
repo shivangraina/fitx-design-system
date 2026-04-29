@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FitX — Color: Saffron Scale</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--fx-bg); font-family: var(--fx-font-body); padding: 24px; }
+  .scale { display: grid; grid-template-columns: repeat(7, 1fr); gap: 0; border-radius: 12px; overflow: hidden; box-shadow: var(--fx-shadow-sm); }
+  .step { aspect-ratio: 1 / 1.1; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; }
+  .lbl { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; }
+  .val { font-size: 10px; font-family: var(--fx-font-num); }
+  .caption { margin-top: 12px; font-size: 12px; color: var(--fx-fg-3); }
+</style>
+</head>
+<body>
+<div class="scale">
+  <div class="step" style="background:#FBEEE5;color:#97391A"><span class="lbl">50</span><span class="val">#FBEEE5</span></div>
+  <div class="step" style="background:#F6D8C2;color:#97391A"><span class="lbl">100</span><span class="val">#F6D8C2</span></div>
+  <div class="step" style="background:#EFB997;color:#97391A"><span class="lbl">200</span><span class="val">#EFB997</span></div>
+  <div class="step" style="background:#E89368;color:#FFF"><span class="lbl">300</span><span class="val">#E89368</span></div>
+  <div class="step" style="background:#E0653A;color:#FFF"><span class="lbl">400 ★</span><span class="val">#E0653A</span></div>
+  <div class="step" style="background:#C04E26;color:#FFF"><span class="lbl">500</span><span class="val">#C04E26</span></div>
+  <div class="step" style="background:#97391A;color:#FFF"><span class="lbl">600</span><span class="val">#97391A</span></div>
+</div>
+<div class="caption">Saffron — primary accent ramp · 400 is the canonical brand value</div>
+</body>
+</html>

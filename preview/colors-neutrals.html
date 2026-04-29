@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FitX — Color: Neutrals</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--fx-bg); font-family: var(--fx-font-body); padding: 24px; }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .sw { border-radius: 12px; overflow: hidden; background: var(--fx-white); border: 1px solid var(--fx-stone-200); }
+  .chip { height: 64px; }
+  .meta { padding: 8px 10px; }
+  .name { font-family: var(--fx-font-display); font-weight: 600; font-size: 13px; color: var(--fx-fg-1); }
+  .hex { font-size: 10px; color: var(--fx-fg-3); font-variant-numeric: tabular-nums; }
+  h3 { margin: 0 0 8px; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fx-fg-3); font-weight: 600; }
+  section + section { margin-top: 14px; }
+</style>
+</head>
+<body>
+<section>
+  <h3>Cream — page surfaces</h3>
+  <div class="row">
+    <div class="sw"><div class="chip" style="background:#FDFAF4"></div><div class="meta"><div class="name">Cream 50</div><div class="hex">#FDFAF4</div></div></div>
+    <div class="sw"><div class="chip" style="background:#FCF8EF"></div><div class="meta"><div class="name">Cream 100</div><div class="hex">#FCF8EF</div></div></div>
+    <div class="sw"><div class="chip" style="background:#F7F1E7"></div><div class="meta"><div class="name">Cream 200 ★</div><div class="hex">#F7F1E7 · page bg</div></div></div>
+    <div class="sw"><div class="chip" style="background:#EFE5D2"></div><div class="meta"><div class="name">Cream 300</div><div class="hex">#EFE5D2</div></div></div>
+  </div>
+</section>
+<section>
+  <h3>Ink &amp; Stone — text &amp; borders</h3>
+  <div class="row">
+    <div class="sw"><div class="chip" style="background:#1A1815"></div><div class="meta"><div class="name">Ink 900</div><div class="hex">#1A1815 · body</div></div></div>
+    <div class="sw"><div class="chip" style="background:#6B6359"></div><div class="meta"><div class="name">Stone 600</div><div class="hex">#6B6359 · 2nd text</div></div></div>
+    <div class="sw"><div class="chip" style="background:#8A8074"></div><div class="meta"><div class="name">Stone 500</div><div class="hex">#8A8074 · meta</div></div></div>
+    <div class="sw"><div class="chip" style="background:#E1DAD0"></div><div class="meta"><div class="name">Stone 200</div><div class="hex">#E1DAD0 · hairline</div></div></div>
+  </div>
+</section>
+</body>
+</html>

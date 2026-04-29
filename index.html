@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FitX Design System</title>
+<link rel="stylesheet" href="colors_and_type.css">
+<link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
+<style>
+  body { margin: 0; background: var(--fx-bg); color: var(--fx-fg); font-family: var(--fx-font-body); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 48px 24px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  header img { height: 44px; }
+  h1 { font-family: var(--fx-font-display); font-weight: 600; font-size: 44px; line-height: 1.1; margin: 24px 0 8px; letter-spacing: -0.01em; }
+  .tag { font-style: italic; color: var(--fx-ink-700); margin: 0 0 32px; font-size: 18px; }
+  h2 { font-family: var(--fx-font-display); font-weight: 600; font-size: 22px; margin: 40px 0 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+  a.card {
+    display: block; padding: 14px 16px; border-radius: 10px; text-decoration: none;
+    background: var(--fx-bg-alt); color: var(--fx-fg); border: 1px solid rgba(0,0,0,0.06);
+    transition: transform 0.08s ease, border-color 0.08s ease;
+  }
+  a.card:hover { border-color: var(--fx-accent); transform: translateY(-1px); }
+  a.card .name { font-weight: 600; font-size: 14px; }
+  a.card .sub { font-size: 12px; color: var(--fx-ink-700); margin-top: 2px; }
+  .featured { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 8px; }
+  a.feat {
+    display: block; padding: 20px; border-radius: 14px; text-decoration: none;
+    background: var(--fx-surface-dark); color: #fff;
+  }
+  a.feat.alt { background: var(--fx-accent); }
+  a.feat .name { font-family: var(--fx-font-display); font-size: 22px; font-weight: 600; }
+  a.feat .sub { font-size: 13px; opacity: 0.85; margin-top: 4px; }
+  footer { margin-top: 48px; font-size: 12px; color: var(--fx-ink-700); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="assets/logo.svg" alt="FitX">
+  </header>
+  <h1>FitX Design System</h1>
+  <p class="tag">Strength for every stage of life.</p>
+
+  <h2>UI kits</h2>
+  <div class="featured">
+    <a class="feat" href="ui_kits/app/index.html">
+      <div class="name">FitX App</div>
+      <div class="sub">Mobile UI kit — screens & components</div>
+    </a>
+    <a class="feat alt" href="ui_kits/web/index.html">
+      <div class="name">FitX Web</div>
+      <div class="sub">Marketing site UI kit</div>
+    </a>
+    <a class="feat" href="graceful-degradation/index.html" style="background: var(--fx-forest-400);">
+      <div class="name">Graceful degradation</div>
+      <div class="sub">Layout & responsive variants</div>
+    </a>
+  </div>
+
+  <h2>Foundations</h2>
+  <div class="grid">
+    <a class="card" href="preview/colors-brand.html"><div class="name">Brand colors</div><div class="sub">Saffron, forest, cream</div></a>
+    <a class="card" href="preview/colors-saffron-scale.html"><div class="name">Saffron scale</div><div class="sub">50 → 600</div></a>
+    <a class="card" href="preview/colors-forest-scale.html"><div class="name">Forest scale</div><div class="sub">50 → 600</div></a>
+    <a class="card" href="preview/colors-neutrals.html"><div class="name">Neutrals</div><div class="sub">Cream & ink</div></a>
+    <a class="card" href="preview/colors-semantic.html"><div class="name">Semantic colors</div><div class="sub">Roles & states</div></a>
+    <a class="card" href="preview/type-display.html"><div class="name">Display type</div><div class="sub">Fraunces</div></a>
+    <a class="card" href="preview/type-body-numerals.html"><div class="name">Body & numerals</div><div class="sub">Inter / Fraunces</div></a>
+    <a class="card" href="preview/type-scale.html"><div class="name">Type scale</div><div class="sub">Sizes & line-heights</div></a>
+    <a class="card" href="preview/spacing-scale.html"><div class="name">Spacing scale</div><div class="sub">4px base</div></a>
+    <a class="card" href="preview/radii.html"><div class="name">Radii</div><div class="sub">Corner tokens</div></a>
+    <a class="card" href="preview/shadows.html"><div class="name">Shadows</div><div class="sub">Elevation</div></a>
+    <a class="card" href="preview/iconography.html"><div class="name">Iconography</div><div class="sub">Lucide</div></a>
+    <a class="card" href="preview/brand-logo.html"><div class="name">Brand & logo</div></a>
+    <a class="card" href="preview/voice-tone.html"><div class="name">Voice & tone</div></a>
+  </div>
+
+  <h2>Components</h2>
+  <div class="grid">
+    <a class="card" href="preview/buttons.html"><div class="name">Buttons</div></a>
+    <a class="card" href="preview/inputs.html"><div class="name">Inputs</div></a>
+    <a class="card" href="preview/badges.html"><div class="name">Badges</div></a>
+    <a class="card" href="preview/cards.html"><div class="name">Cards</div></a>
+  </div>
+
+  <footer>FitX Design System · static preview</footer>
+</div>
+</body>
+</html>

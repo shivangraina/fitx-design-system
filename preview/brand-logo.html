@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FitX — Logo</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--fx-bg); font-family: var(--fx-font-body); padding: 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .tile { background: var(--fx-white); border-radius: 12px; padding: 22px; display: flex; align-items: center; justify-content: center; height: 110px; box-shadow: var(--fx-shadow-sm); }
+  .tile.dark { background: var(--fx-forest-500); }
+  .tile.cream { background: var(--fx-cream-300); }
+  .tile.saffron { background: var(--fx-saffron-400); }
+  .tile img { max-height: 56px; max-width: 100%; }
+  .lbl { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fx-stone-500); font-weight: 600; margin-bottom: 6px; }
+  figure { margin: 0; }
+</style>
+</head>
+<body>
+<div class="grid">
+  <figure><div class="lbl">On cream</div><div class="tile"><img src="../assets/logo.svg" alt="FitX"></div></figure>
+  <figure><div class="lbl">On forest</div><div class="tile dark"><img src="../assets/logo-on-dark.svg" alt="FitX"></div></figure>
+  <figure><div class="lbl">App icon</div><div class="tile cream"><img src="../assets/app-icon.svg" alt="" style="height:72px;border-radius:16px"></div></figure>
+  <figure><div class="lbl">Monogram</div><div class="tile saffron"><img src="../assets/monogram.svg" alt="" style="height:56px;background:#fff;border-radius:12px;padding:2px"></div></figure>
+</div>
+</body>
+</html>

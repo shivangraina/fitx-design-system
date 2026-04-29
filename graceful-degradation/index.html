@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FitX — Graceful Degradation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; background: #2A2522; color: #1A1815; font-family: Inter, system-ui, sans-serif; }
+  body { overflow: hidden; }
+</style>
+</head>
+<body>
+<div id="root" style="position:fixed;inset:0;"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="Atoms.jsx"></script>
+<script type="text/babel" src="Screen1_CheckIn.jsx"></script>
+<script type="text/babel" src="Screen2_Swap.jsx"></script>
+<script type="text/babel" src="Screen3_Weekly.jsx"></script>
+
+<script type="text/babel">
+  function App() {
+    return (
+      <DesignCanvas>
+        <DCSection id="checkin" title="01 · Check-in" subtitle="Two-tap state probe — surfaces in the evening when dinner hasn't been logged. Time, energy, optionally what's at hand.">
+          <DCArtboard id="checkin-evening" label="Tonight, on the home screen" width={406} height={860}>
+            <GDPhone><Screen_CheckIn/></GDPhone>
+          </DCArtboard>
+        </DCSection>
+
+        <DCSection id="swap" title="02 · Swap proposal" subtitle="Original plan, dimmed at top — today's version, full-colour below — followed by an equivalence panel and the expert who pre-approved this swap.">
+          <DCArtboard id="swap-meal" label="Meal swap · dinner" width={406} height={860}>
+            <GDPhone><Screen_SwapMeal/></GDPhone>
+          </DCArtboard>
+          <DCArtboard id="swap-workout" label="Workout swap · strength" width={406} height={860}>
+            <GDPhone><Screen_SwapWorkout/></GDPhone>
+          </DCArtboard>
+        </DCSection>
+
+        <DCSection id="weekly" title="03 · Weekly view" subtitle="Adherence is intact. 4/4 sessions, 2 full + 2 today's-versions. Macro and volume targets visible — the swaps weren't shortcuts, they were coaching.">
+          <DCArtboard id="weekly" label="Tuesday evening, week 4" width={406} height={860}>
+            <GDPhone><Screen_Weekly/></GDPhone>
+          </DCArtboard>
+        </DCSection>
+      </DesignCanvas>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>

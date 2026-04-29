@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FitX — Voice & Tone</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--fx-bg); font-family: var(--fx-font-body); padding: 22px; color: var(--fx-fg-1); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .quote { background: var(--fx-white); border-radius: 12px; padding: 18px; box-shadow: var(--fx-shadow-sm); }
+  .quote.no { border: 1.5px solid var(--fx-danger); background: #FBE6E2; }
+  .quote.yes { border: 1.5px solid var(--fx-success); }
+  .head { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; }
+  .yes .head { color: var(--fx-success); }
+  .no .head { color: var(--fx-danger); }
+  p { font-family: var(--fx-font-display); font-weight: 500; font-size: 17px; line-height: 1.4; margin: 0; color: var(--fx-fg-1); }
+</style>
+</head>
+<body>
+<div class="grid">
+  <div class="quote yes"><div class="head">✓ FitX voice</div><p>"Strength training, scaled to you. Whether you're 28 and building or 68 and preserving — your plan adapts."</p></div>
+  <div class="quote no"><div class="head">✗ Not us</div><p>"💪 UNLOCK YOUR INNER BEAST! 🔥 100% RESULTS GUARANTEED!"</p></div>
+  <div class="quote yes"><div class="head">✓ FitX voice</div><p>"Rest day. Walk if you feel like it. Recovery is training too."</p></div>
+  <div class="quote no"><div class="head">✗ Not us</div><p>"NO DAYS OFF. Push harder. No excuses."</p></div>
+</div>
+</body>
+</html>

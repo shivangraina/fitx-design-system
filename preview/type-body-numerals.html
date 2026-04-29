@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FitX — Type: Body & Numerals</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--fx-bg); font-family: var(--fx-font-body); padding: 24px; color: var(--fx-fg-1); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .panel { background: var(--fx-white); border-radius: 12px; padding: 18px; box-shadow: var(--fx-shadow-sm); }
+  .eyebrow { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fx-stone-500); font-weight: 600; margin-bottom: 10px; }
+  .body p { font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.6; margin: 0; color: var(--fx-ink-900); }
+  .nums { display: flex; gap: 16px; align-items: baseline; }
+  .stat { display: flex; flex-direction: column; }
+  .stat .v { font-family: var(--fx-font-num); font-feature-settings: "tnum" 1; font-size: 38px; font-weight: 500; color: var(--fx-saffron-400); letter-spacing: -0.02em; line-height: 1; }
+  .stat .k { font-size: 11px; color: var(--fx-stone-500); margin-top: 4px; letter-spacing: 0.04em; }
+  .meta { margin-top: 10px; font-size: 11px; color: var(--fx-fg-3); }
+</style>
+</head>
+<body>
+<div class="grid">
+  <div class="panel body">
+    <div class="eyebrow">Body — Inter</div>
+    <p>Whether you're 28 and building or 68 and preserving — your plan adapts. Real Indian food. No pills, no powders.</p>
+    <div class="meta">Inter · 400/500/600 · 1.6 line-height</div>
+  </div>
+  <div class="panel">
+    <div class="eyebrow">Numerals — Fraunces tabular</div>
+    <div class="nums">
+      <div class="stat"><span class="v">12</span><span class="k">weeks</span></div>
+      <div class="stat"><span class="v">65g</span><span class="k">protein</span></div>
+      <div class="stat"><span class="v">₹1,499</span><span class="k">/ month</span></div>
+    </div>
+    <div class="meta">Fraunces · tnum · −0.02 tracking</div>
+  </div>
+</div>
+</body>
+</html>

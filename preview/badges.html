@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FitX — Badges</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--fx-bg); font-family: var(--fx-font-body); padding: 24px; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .lbl { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fx-stone-500); font-weight: 600; width: 100%; margin-top: 6px; }
+  .dot { width: 6px; height: 6px; border-radius: 99px; background: currentColor; }
+</style>
+</head>
+<body>
+<div class="row"><span class="lbl">Brand</span>
+  <span class="fx-badge fx-badge-saffron">★ Most popular</span>
+  <span class="fx-badge fx-badge-forest">Doctor reviewed</span>
+  <span class="fx-badge">12-week program</span>
+</div>
+<div class="row"><span class="lbl">Semantic</span>
+  <span class="fx-badge fx-badge-success"><span class="dot"></span>On track</span>
+  <span class="fx-badge fx-badge-warn"><span class="dot"></span>3 swaps needed</span>
+  <span class="fx-badge fx-badge-danger"><span class="dot"></span>Doctor review</span>
+</div>
+<div class="row"><span class="lbl">Conditions / tags</span>
+  <span class="fx-badge">Diabetes</span>
+  <span class="fx-badge">Thyroid</span>
+  <span class="fx-badge">PCOS</span>
+  <span class="fx-badge">Hypertension</span>
+  <span class="fx-badge">Veg</span>
+</div>
+</body>
+</html>

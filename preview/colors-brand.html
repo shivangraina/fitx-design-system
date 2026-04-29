@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FitX — Color: Brand</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--fx-bg); font-family: var(--fx-font-body); padding: 24px; }
+  .row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .swatch { border-radius: 12px; overflow: hidden; box-shadow: var(--fx-shadow-sm); background: var(--fx-white); }
+  .chip { height: 56px; display: flex; align-items: flex-end; padding: 8px 12px; color: var(--fx-white); font-size: 11px; font-weight: 600; letter-spacing: 0.04em; }
+  .meta { padding: 8px 12px; }
+  .name { font-family: var(--fx-font-display); font-weight: 600; font-size: 14px; color: var(--fx-fg-1); }
+  .hex { font-size: 11px; color: var(--fx-fg-3); font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="swatch"><div class="chip" style="background:#E0653A">PRIMARY</div><div class="meta"><div class="name">Saffron 400</div><div class="hex">#E0653A · accent / CTA</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#1F4D3F">VITALITY</div><div class="meta"><div class="name">Forest 500</div><div class="hex">#1F4D3F · dark surface / brand</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#C04E26">HOVER</div><div class="meta"><div class="name">Saffron 500</div><div class="hex">#C04E26 · button hover</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#11332A">DEEP</div><div class="meta"><div class="name">Forest 600</div><div class="hex">#11332A · headline on cream</div></div></div>
+</div>
+</body>
+</html>
